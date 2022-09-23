@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+html{
+    font-family: 'karla',sans-serif;
+    font-size: 15px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(204, 43%, 93%);
+    padding: 100px 30px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 670px;
+    margin: 0 auto;
+    border-radius: 11px;
+    overflow: hidden;
+    box-shadow: 0px 0px 14px 1px #00000024;
+}
+
+.community{
+    background-color: rgb(255, 253, 253);
+    align-content: center;
+}
+.community h2{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+.community h3{
+    color: hsl(71, 73%, 54%);
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.community p{
+    color: hsl(218, 22%, 67%);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+.card{
+    background-color: rgb(15, 67, 66);
+    
+}
+
+.card h3{
+    color: white;
+    font-weight: 400;
+    font-size: 1.rem;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.card p{
+    color: hsl(204, 43%, 93%);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+    
+    
+}
+
+.card p span{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.card a{
+    text-align: center;
+    width: 70%;
+    padding: 5%;
+    border-radius: 11px;
+    display: inline-block;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    font-weight: 700;
+    box-shadow: 0px 4px 10px 1px #00000033;
+}
+
+
+.why-us{
+    background-color: rgba(85, 145, 142, 0.698);
+}
+.why-us h3{
+   color: white;
+   font-weight: 400;
+   font-size: 1.3rem;
+   margin-bottom: 15px;
+   margin-top: 20px;
+   text-align: center;
+
+}
+.why-us p{
+    color: hsl(204, 43%, 93%);
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+@media only screen and (min-width:768px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container .community{
+        grid-area: 1/ 1/2/ 3;
+    }
+    .container .card,
+    .container .why-us{
+        grid-row: 2;
+    }
+    
+}
